@@ -2,6 +2,7 @@
   --bg-color: #fff1f7;
   --text-color: #353430;
   --accent-color: #353430;
+  --accent-color-alpha: rgba(50, 49, 45, 0.4);
   --header-color: #ffc2e6;
   --header-shadow-color: #ff0070;
   --title-color: #353430;
@@ -10,7 +11,7 @@
 }
 
 .page.theme_light .header .header_elemet {
-  visibility: hidden;
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,10 +19,15 @@
     --bg-color: #fff1f7;
     --text-color: #353430;
     --accent-color: #353430;
+    --accent-color-alpha: rgba(50, 49, 45, 0.4);
     --header-color: #ffc2e6;
     --header-shadow-color: #ff0070;
     --title-color: #353430;
     --bg-title-color: #ff8dcb;
     --background-image: url(../images/cover-image-light.png);
+  }
+
+  .page.theme_auto .header .header_elemet {
+    display: none;
   }
 }
