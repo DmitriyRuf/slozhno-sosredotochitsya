@@ -9,6 +9,10 @@
   background-position: center center;
 }
 
+.content-section {
+  margin: 0 var(--margin-content);
+}
+
 .header {
   position: relative;
   margin-block-end: 40px;
@@ -21,6 +25,7 @@
 }
 
 .header__theme-menu {
+  display: flex;
   justify-self: end;
   margin-block-start: 75px;
   margin-block-end: 65px;
@@ -141,10 +146,6 @@
   border-block-start: 1px solid var(--accent-color, #ff0070);
   border-inline-end: 1px solid var(--accent-color, #ff0070);
   z-index: 1;
-}
-
-.content-section {
-  margin: 0 var(--margin-content);
 }
 
 .content {
